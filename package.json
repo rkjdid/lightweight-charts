@@ -49,6 +49,7 @@
     "@typescript-eslint/parser": "~4.1.1",
     "bytes": "~3.1.0",
     "chai": "~4.2.0",
+    "clean-publish": "~1.1.5",
     "cross-env": "~7.0.0",
     "dts-bundle-generator": "~5.4.0",
     "eslint": "~7.9.0",
@@ -83,10 +84,14 @@
     "typescript": "4.0.2"
   },
   "scripts": {
+<<<<<<< HEAD
     "postinstall": "npm run install-hooks",
+=======
+    "prepare": "npm run build:prod",
+>>>>>>> c99b059... squashed work from MohamedLamineAllal to fix npm install
     "install-hooks": "node scripts/githooks/install.js",
     "clean": "rimraf lib/ dist/",
-    "bundle-dts": "tsc --noEmit --allowJs dts-config.js && dts-bundle-generator --config dts-config.js",
+    "bundle-dts": "tsc --skipLibCheck --noEmit --allowJs dts-config.js && dts-bundle-generator --config dts-config.js",
     "tsc": "ttsc -p tsconfig.prod.json",
     "tsc-watch": "npm run tsc -- --watch --preserveWatchOutput",
     "tsc-verify": "tsc -b tsconfig.composite.json",
