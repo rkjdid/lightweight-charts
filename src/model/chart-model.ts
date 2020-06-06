@@ -330,7 +330,6 @@ export class ChartModel implements IDestroyable {
 		this.invalidate(mask);
 
 		this._panes[actualIndex].setStretchFactor(DEFAULT_STRETCH_FACTOR * 2);
-		this._panes[actualIndex].addDataSource(this._watermark, true, false);
 
 		return pane;
 	}
