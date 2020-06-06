@@ -18,6 +18,53 @@
 
 [Demos][demo-url] | [Documentation](./docs/README.md) | [Discord community](https://discord.gg/E6UthXZ)
 
+## INSTALLING FORK INSTRUCTIONS
+
+This is a fork! For the v3 before it get released! Typically for us! But if you fall here! And may was in a situation like ours! We needed v3! Then suite yourself! It's all simple!
+
+### INSTALL DIRECTLY using npm or yarn
+
+```sh
+npm install git+https://github.com/MohamedLamineAllal/Lightweight-charts-v3.0-fork --save
+```
+
+or for yarn
+
+```sh
+yarn install git+https://github.com/MohamedLamineAllal/Lightweight-charts-v3.0-fork --save
+```
+
+The command above will automatically fetch the repo resolve the dependencies and install them and build it ! And add it to node_modules!
+Just as if it was fetched from an npm registry!
+
+## Buidling manually
+
+`npm install` (to install all dependencies! Know that chai dependencies were removed! For faster setup)
+
+Build after it
+
+### build
+
+```sh
+npm run build:prod
+```
+
+Note that you may like to install some packages globally (but not need)
+
+`npm i -g ttypescript npm-run-all typescript rollup dts-bundle-generator cross-env`
+
+Some modification were made to avoid some errors (typically the --skipLibCheck flag)
+
+If no erro happens then super cool
+
+**Copy** and **Past** on node_modules ! With name lightweight-charts
+
+It should work now
+
+But well clearly you gonna go with the first option!
+
+## --
+
 TradingView Lightweight Charts are one of the smallest and fastest financial HTML5 charts.
 
 The Lightweight Charting Library is the best choice for you if you want to display financial data as an interactive chart on your web page without affecting your web page loading speed and performance.
