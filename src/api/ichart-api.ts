@@ -97,6 +97,8 @@ export interface IChartApi {
 	 */
 	addSubPane(): void;
 
+	removeSubPane(index: number): void;
+
 	/**
 	 * Removes a series of any type. This is an irreversible operation, you cannot do anything with the series after removing it
 	 */
