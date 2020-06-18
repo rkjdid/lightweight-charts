@@ -334,6 +334,10 @@ export class ChartModel implements IDestroyable {
 		return pane;
 	}
 
+	public removeSubplot(index: number) {
+		this._panes.splice(index, 1);
+	}
+
 	public startScalePrice(pane: Pane, priceScale: PriceScale, x: number): void {
 		pane.startScalePrice(priceScale, x);
 	}

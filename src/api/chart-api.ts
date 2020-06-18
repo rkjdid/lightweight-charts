@@ -270,6 +270,10 @@ export class ChartApi implements IChartApi, IPriceScaleApiProvider, DataUpdatesC
 		this._chartWidget.model().createSubplot();
 	}
 
+	public removeSubPane(index: number): void {
+		this._chartWidget.model().removeSubplot(index);
+	}
+
 	public removeSeries(seriesApi: ISeriesApi<SeriesType>): void {
 		const seriesObj = seriesApi as SeriesApi<SeriesType>;
 		const series = ensureDefined(this._seriesMap.get(seriesObj));
